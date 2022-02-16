@@ -84,6 +84,21 @@ section{
   margin-right: auto;
   padding: 1em;
 }
+.popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fffc;
+  padding: 20px;
+}
+.popup > .popup-content{
+  position: absolute;
+  display: block;
+  top: 25%;
+  left: 12.5%;
+  width: 80%;
+  height: 50%;
+}
 
 .slideshow > *{
   display: inline-block;
@@ -95,4 +110,10 @@ section{
 }
 .slideshow a{
   color: inherit;
+}
+.slideshow [data]{
+  display: none;
+}
+.slideshow .popup{
+  width: 100%;
 }
